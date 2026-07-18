@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlitos Tech: diseño web, videojuegos y chatbots para proyectos empresariales.">
+    <title>Carlitos Tech | Servicios Tecnológicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a class="brand" href="#inicio" aria-label="Ir al inicio de Carlitos Tech">
+                <img class="brand__logo" src="imagenes/logo/logocarlitostech.png" alt="Logo de Carlitos Tech">
+                <span>Carlitos Tech</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- MENU -->
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes somos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO: actualiza el texto principal si quiero una bienvenida distinta. -->
+        <section class="hero section reveal" id="inicio">
+            <div class="hero__content">
+                <p class="eyebrow">Soluciones digitales para ideas que quieren crecer</p>
+                <h1>Bienvenido a Carlitos Tech</h1>
+                <p class="hero__text">
+                    Creamos experiencias web, videojuegos y chatbots con enfoque moderno,
+                    funcional y adaptable a las necesidades de cada proyecto empresarial.
+                </p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="#servicios">Ver servicios</a>
+                    <a class="btn btn--ghost" href="#contacto">Contactar</a>
+                </div>
+            </div>
+
+            <!-- IMAGEN PRINCIPAL -->
+            <div class="hero__media">
+                <img src="imagenes/logo/Carlitostech-01.png" alt="Imagen principal de Carlitos Tech">
+            </div>
+        </section>
+
+        <!-- COLABORACIONES: agregar a alguien colaboraciones. -->
+        <section class="collabs section reveal" aria-labelledby="colaboraciones-titulo">
+            <div class="section-heading">
+                <p class="eyebrow">Alianzas</p>
+                <h2 id="colaboraciones-titulo">Colaboraciones</h2>
+                <p>Espacio dedicado a marcas, instituciones o personas que trabajen junto a Carlitos Tech.</p>
+            </div>
+            <div class="collab-list">
+                <article class="collab-item">
+                    <img src="https://placehold.co/280x160/e2e8f0/0f172a?text=Aliado+1"
+                        alt="Placeholder de colaboración 1">
+                    <h3>Colaboración destacada</h3>
+                    <p>Describir aquí el objetivo, alcance o resultado de esta colaboración.</p>
+                </article>
+                <article class="collab-item">
+                    <img src="https://placehold.co/280x160/dbeafe/0f172a?text=Aliado+2"
+                        alt="Placeholder de colaboración 2">
+                    <h3>Proyecto conjunto</h3>
+                    <p>Agrega información sobre proyectos creados con otras personas o entidades.</p>
+                </article>
+                <article class="collab-item">
+                    <img src="https://placehold.co/280x160/fef3c7/0f172a?text=Aliado+3"
+                        alt="Placeholder de colaboración 3">
+                    <h3>Nueva alianza</h3>
+                    <p>Usa este espacio para mostrar oportunidades de trabajo colaborativo.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- QUIÉNES SOMOS: modificar esta información si quiero ampliar la historia de la empresa. -->
+        <section class="about section reveal" id="quienes-somos">
+            <div class="section-heading">
+                <p class="eyebrow">Nuestro equipo</p>
+                <h2>Quiénes somos</h2>
+            </div>
+            <div class="about__layout">
+                <div class="about__text">
+                    <p>
+                        Nuestros creadores son <strong>Carlos Hernando Duburque Cardona</strong> y
+                        <strong>Juan Camilo Quintero</strong>, estudiantes de la
+                        <strong>Institución Educativa CASD</strong>.
+                    </p>
+                    <p>
+                        Somos <strong>Carlitos Tech</strong>, una empresa de servicios tecnológicos
+                        enfocada en diseñar páginas web, crear videojuegos y desarrollar chatbots.
+                    </p>
+                </div>
+                <div class="about__stats" aria-label="Datos destacados">
+                    <div>
+                        <span>3</span>
+                        <p>Líneas de servicio</p>
+                    </div>
+                    <div>
+                        <span>100%</span>
+                        <p>Enfoque estudiantil y creativo</p>
+                    </div>
+                    <div>
+                        <span>CASD</span>
+                        <p>Formación académica</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS: cambia las imágenes, textos y href vacíos cuando tenga mis páginas listas. -->
+        <section class="services section reveal" id="servicios">
+            <div class="section-heading">
+                <p class="eyebrow">Qué hacemos</p>
+                <h2>Servicios</h2>
+                <p>Soluciones pensadas para empresas, emprendimientos y proyectos académicos.</p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="service-card">
+                    <img src="imagenes/desarrolloweb.jpg" alt="Placeholder del servicio de diseño web">
+                    <div class="service-card__body">
+                        <h3>Diseño Web</h3>
+                        <p>Páginas modernas, responsivas y optimizadas para presentar tu negocio con claridad.</p>
+                        <a href="" aria-label="Agregar enlace para diseño web">Agregar enlace</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="imagenes/creaciondejuegos.jpg" alt="Placeholder del servicio de videojuegos">
+                    <div class="service-card__body">
+                        <h3>Videojuegos</h3>
+                        <p>Experiencias interactivas con mecánicas atractivas para aprender, entretener o promocionar.
+                        </p>
+                        <a href="" aria-label="Agregar enlace para videojuegos">Agregar enlace</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="imagenes/chatbot.jpg" alt="Placeholder del servicio de chatbots">
+                    <div class="service-card__body">
+                        <h3>Chatbots</h3>
+                        <p>Asistentes virtuales para responder preguntas, guiar usuarios y automatizar conversaciones.
+                        </p>
+                        <a href="" aria-label="Agregar enlace para chatbots">Agregar enlace</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- GALERÍA: reemplaza cada src por fotos de mis proyectos cuando las tengas. -->
+        <section class="gallery section reveal" id="galeria">
+            <div class="section-heading">
+                <p class="eyebrow">Portafolio</p>
+                <h2>Galería</h2>
+                <p>Cuadrícula preparada para mostrar capturas, prototipos o resultados finales.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="galeria/Iphone14/index.html"><img src="galeria/Iphone14/image/iphone14.png"
+                        alt="El Iphone 14"></a>
+                <a href=""><img src="https://placehold.co/520x380/e0f2fe/0f172a?text=Proyecto+2" alt="juego"></a>
+                <a href="galeria/punlt convercion/index.html"><img
+                        src="galeria/punlt convercion/image/punntconversion.png" alt="Punlt conversion"></a>
+                <a href="galeria/temperatura/index.html"><img src="galeria/virusscaner/image/virus.png"
+                        alt="virus scaner"></a>
+                <a href=""><img src="https://placehold.co/520x380/fee2e2/0f172a?text=Proyecto+5" alt="buenaventura"></a>
+                <a href=""><img src="https://placehold.co/520x380/ede9fe/0f172a?text=Proyecto+6" alt="Futbol sala"></a>
+            </div>
+        </section>
+
+        <!-- CONTACTO: puedos conectar este formulario a un backend o servicio de formularios después. -->
+        <section class="contact section reveal" id="contacto">
+            <div class="section-heading">
+                <p class="eyebrow">Hablemos</p>
+                <h2>Contáctenos</h2>
+                <p>Completa tus datos, elige el servicio que necesitas y cuéntanos los detalles del proyecto.</p>
+            </div>
+
+            <div class="contact__layout">
+                <form class="contact-form" action="https://formsubmit.co/oficialmegamente4@gmail.com" method="POST">
+                    <!-- FORMULARIO: este action usa FormSubmit para enviar las respuestas al correo oficialmegamente4@gamil.com. -->
+                    <input type="hidden" name="_subject" value="Nueva solicitud desde Carlitos Tech">
+                    <input type="hidden" name="_template" value="table">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Ej: Carlos Duburque"
+                            autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico *</label>
+                        <input id="correo" name="email" type="email" placeholder="tu@email.com" autocomplete="email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pais">País o código telefónico *</label>
+                        <select id="pais" name="pais" required>
+                            <option value="">-- Selecciona tu país --</option>
+                            <option value="+93 Afganistán">Afganistán (+93)</option>
+                            <option value="+355 Albania">Albania (+355)</option>
+                            <option value="+49 Alemania">Alemania (+49)</option>
+                            <option value="+376 Andorra">Andorra (+376)</option>
+                            <option value="+244 Angola">Angola (+244)</option>
+                            <option value="+1 Anguila">Anguila (+1)</option>
+                            <option value="+1 Antigua y Barbuda">Antigua y Barbuda (+1)</option>
+                            <option value="+966 Arabia Saudita">Arabia Saudita (+966)</option>
+                            <option value="+213 Argelia">Argelia (+213)</option>
+                            <option value="+54 Argentina">Argentina (+54)</option>
+                            <option value="+374 Armenia">Armenia (+374)</option>
+                            <option value="+297 Aruba">Aruba (+297)</option>
+                            <option value="+61 Australia">Australia (+61)</option>
+                            <option value="+43 Austria">Austria (+43)</option>
+                            <option value="+994 Azerbaiyán">Azerbaiyán (+994)</option>
+                            <option value="+1 Bahamas">Bahamas (+1)</option>
+                            <option value="+880 Bangladesh">Bangladesh (+880)</option>
+                            <option value="+1 Barbados">Barbados (+1)</option>
+                            <option value="+973 Baréin">Baréin (+973)</option>
+                            <option value="+32 Bélgica">Bélgica (+32)</option>
+                            <option value="+501 Belice">Belice (+501)</option>
+                            <option value="+229 Benín">Benín (+229)</option>
+                            <option value="+1 Bermudas">Bermudas (+1)</option>
+                            <option value="+375 Bielorrusia">Bielorrusia (+375)</option>
+                            <option value="+591 Bolivia">Bolivia (+591)</option>
+                            <option value="+387 Bosnia y Herzegovina">Bosnia y Herzegovina (+387)</option>
+                            <option value="+267 Botsuana">Botsuana (+267)</option>
+                            <option value="+55 Brasil">Brasil (+55)</option>
+                            <option value="+673 Brunéi">Brunéi (+673)</option>
+                            <option value="+359 Bulgaria">Bulgaria (+359)</option>
+                            <option value="+226 Burkina Faso">Burkina Faso (+226)</option>
+                            <option value="+257 Burundi">Burundi (+257)</option>
+                            <option value="+975 Bután">Bután (+975)</option>
+                            <option value="+238 Cabo Verde">Cabo Verde (+238)</option>
+                            <option value="+855 Camboya">Camboya (+855)</option>
+                            <option value="+237 Camerún">Camerún (+237)</option>
+                            <option value="+1 Canadá">Canadá (+1)</option>
+                            <option value="+974 Catar">Catar (+974)</option>
+                            <option value="+235 Chad">Chad (+235)</option>
+                            <option value="+56 Chile">Chile (+56)</option>
+                            <option value="+86 China">China (+86)</option>
+                            <option value="+357 Chipre">Chipre (+357)</option>
+                            <option value="+57 Colombia">Colombia (+57)</option>
+                            <option value="+269 Comoras">Comoras (+269)</option>
+                            <option value="+242 Congo">Congo (+242)</option>
+                            <option value="+850 Corea del Norte">Corea del Norte (+850)</option>
+                            <option value="+82 Corea del Sur">Corea del Sur (+82)</option>
+                            <option value="+225 Costa de Marfil">Costa de Marfil (+225)</option>
+                            <option value="+506 Costa Rica">Costa Rica (+506)</option>
+                            <option value="+385 Croacia">Croacia (+385)</option>
+                            <option value="+53 Cuba">Cuba (+53)</option>
+                            <option value="+599 Curazao">Curazao (+599)</option>
+                            <option value="+45 Dinamarca">Dinamarca (+45)</option>
+                            <option value="+1 Dominica">Dominica (+1)</option>
+                            <option value="+593 Ecuador">Ecuador (+593)</option>
+                            <option value="+20 Egipto">Egipto (+20)</option>
+                            <option value="+503 El Salvador">El Salvador (+503)</option>
+                            <option value="+971 Emiratos Árabes Unidos">Emiratos Árabes Unidos (+971)</option>
+                            <option value="+291 Eritrea">Eritrea (+291)</option>
+                            <option value="+421 Eslovaquia">Eslovaquia (+421)</option>
+                            <option value="+386 Eslovenia">Eslovenia (+386)</option>
+                            <option value="+34 España">España (+34)</option>
+                            <option value="+1 Estados Unidos">Estados Unidos (+1)</option>
+                            <option value="+372 Estonia">Estonia (+372)</option>
+                            <option value="+251 Etiopía">Etiopía (+251)</option>
+                            <option value="+63 Filipinas">Filipinas (+63)</option>
+                            <option value="+358 Finlandia">Finlandia (+358)</option>
+                            <option value="+679 Fiyi">Fiyi (+679)</option>
+                            <option value="+33 Francia">Francia (+33)</option>
+                            <option value="+241 Gabón">Gabón (+241)</option>
+                            <option value="+220 Gambia">Gambia (+220)</option>
+                            <option value="+995 Georgia">Georgia (+995)</option>
+                            <option value="+233 Ghana">Ghana (+233)</option>
+                            <option value="+350 Gibraltar">Gibraltar (+350)</option>
+                            <option value="+1 Granada">Granada (+1)</option>
+                            <option value="+30 Grecia">Grecia (+30)</option>
+                            <option value="+299 Groenlandia">Groenlandia (+299)</option>
+                            <option value="+590 Guadalupe">Guadalupe (+590)</option>
+                            <option value="+1 Guam">Guam (+1)</option>
+                            <option value="+502 Guatemala">Guatemala (+502)</option>
+                            <option value="+594 Guayana Francesa">Guayana Francesa (+594)</option>
+                            <option value="+44 Guernsey">Guernsey (+44)</option>
+                            <option value="+224 Guinea">Guinea (+224)</option>
+                            <option value="+240 Guinea Ecuatorial">Guinea Ecuatorial (+240)</option>
+                            <option value="+245 Guinea-Bisáu">Guinea-Bisáu (+245)</option>
+                            <option value="+592 Guyana">Guyana (+592)</option>
+                            <option value="+509 Haití">Haití (+509)</option>
+                            <option value="+504 Honduras">Honduras (+504)</option>
+                            <option value="+852 Hong Kong">Hong Kong (+852)</option>
+                            <option value="+36 Hungría">Hungría (+36)</option>
+                            <option value="+91 India">India (+91)</option>
+                            <option value="+62 Indonesia">Indonesia (+62)</option>
+                            <option value="+964 Irak">Irak (+964)</option>
+                            <option value="+98 Irán">Irán (+98)</option>
+                            <option value="+353 Irlanda">Irlanda (+353)</option>
+                            <option value="+354 Islandia">Islandia (+354)</option>
+                            <option value="+1 Islas Caimán">Islas Caimán (+1)</option>
+                            <option value="+682 Islas Cook">Islas Cook (+682)</option>
+                            <option value="+298 Islas Feroe">Islas Feroe (+298)</option>
+                            <option value="+500 Islas Malvinas">Islas Malvinas (+500)</option>
+                            <option value="+1 Islas Marianas del Norte">Islas Marianas del Norte (+1)</option>
+                            <option value="+692 Islas Marshall">Islas Marshall (+692)</option>
+                            <option value="+677 Islas Salomón">Islas Salomón (+677)</option>
+                            <option value="+1 Islas Turcas y Caicos">Islas Turcas y Caicos (+1)</option>
+                            <option value="+1 Islas Vírgenes Británicas">Islas Vírgenes Británicas (+1)</option>
+                            <option value="+1 Islas Vírgenes de EE. UU.">Islas Vírgenes de EE. UU. (+1)</option>
+                            <option value="+972 Israel">Israel (+972)</option>
+                            <option value="+39 Italia">Italia (+39)</option>
+                            <option value="+1 Jamaica">Jamaica (+1)</option>
+                            <option value="+81 Japón">Japón (+81)</option>
+                            <option value="+44 Jersey">Jersey (+44)</option>
+                            <option value="+962 Jordania">Jordania (+962)</option>
+                            <option value="+7 Kazajistán">Kazajistán (+7)</option>
+                            <option value="+254 Kenia">Kenia (+254)</option>
+                            <option value="+996 Kirguistán">Kirguistán (+996)</option>
+                            <option value="+686 Kiribati">Kiribati (+686)</option>
+                            <option value="+383 Kosovo">Kosovo (+383)</option>
+                            <option value="+965 Kuwait">Kuwait (+965)</option>
+                            <option value="+856 Laos">Laos (+856)</option>
+                            <option value="+266 Lesoto">Lesoto (+266)</option>
+                            <option value="+371 Letonia">Letonia (+371)</option>
+                            <option value="+961 Líbano">Líbano (+961)</option>
+                            <option value="+231 Liberia">Liberia (+231)</option>
+                            <option value="+218 Libia">Libia (+218)</option>
+                            <option value="+423 Liechtenstein">Liechtenstein (+423)</option>
+                            <option value="+370 Lituania">Lituania (+370)</option>
+                            <option value="+352 Luxemburgo">Luxemburgo (+352)</option>
+                            <option value="+853 Macao">Macao (+853)</option>
+                            <option value="+389 Macedonia del Norte">Macedonia del Norte (+389)</option>
+                            <option value="+261 Madagascar">Madagascar (+261)</option>
+                            <option value="+60 Malasia">Malasia (+60)</option>
+                            <option value="+265 Malaui">Malaui (+265)</option>
+                            <option value="+960 Maldivas">Maldivas (+960)</option>
+                            <option value="+223 Malí">Malí (+223)</option>
+                            <option value="+356 Malta">Malta (+356)</option>
+                            <option value="+212 Marruecos">Marruecos (+212)</option>
+                            <option value="+596 Martinica">Martinica (+596)</option>
+                            <option value="+230 Mauricio">Mauricio (+230)</option>
+                            <option value="+222 Mauritania">Mauritania (+222)</option>
+                            <option value="+262 Mayotte">Mayotte (+262)</option>
+                            <option value="+52 México">México (+52)</option>
+                            <option value="+691 Micronesia">Micronesia (+691)</option>
+                            <option value="+373 Moldavia">Moldavia (+373)</option>
+                            <option value="+377 Mónaco">Mónaco (+377)</option>
+                            <option value="+976 Mongolia">Mongolia (+976)</option>
+                            <option value="+382 Montenegro">Montenegro (+382)</option>
+                            <option value="+1 Montserrat">Montserrat (+1)</option>
+                            <option value="+258 Mozambique">Mozambique (+258)</option>
+                            <option value="+95 Myanmar">Myanmar (+95)</option>
+                            <option value="+264 Namibia">Namibia (+264)</option>
+                            <option value="+674 Nauru">Nauru (+674)</option>
+                            <option value="+977 Nepal">Nepal (+977)</option>
+                            <option value="+505 Nicaragua">Nicaragua (+505)</option>
+                            <option value="+227 Níger">Níger (+227)</option>
+                            <option value="+234 Nigeria">Nigeria (+234)</option>
+                            <option value="+683 Niue">Niue (+683)</option>
+                            <option value="+47 Noruega">Noruega (+47)</option>
+                            <option value="+687 Nueva Caledonia">Nueva Caledonia (+687)</option>
+                            <option value="+64 Nueva Zelanda">Nueva Zelanda (+64)</option>
+                            <option value="+968 Omán">Omán (+968)</option>
+                            <option value="+31 Países Bajos">Países Bajos (+31)</option>
+                            <option value="+92 Pakistán">Pakistán (+92)</option>
+                            <option value="+680 Palaos">Palaos (+680)</option>
+                            <option value="+970 Palestina">Palestina (+970)</option>
+                            <option value="+507 Panamá">Panamá (+507)</option>
+                            <option value="+675 Papúa Nueva Guinea">Papúa Nueva Guinea (+675)</option>
+                            <option value="+595 Paraguay">Paraguay (+595)</option>
+                            <option value="+51 Perú">Perú (+51)</option>
+                            <option value="+689 Polinesia Francesa">Polinesia Francesa (+689)</option>
+                            <option value="+48 Polonia">Polonia (+48)</option>
+                            <option value="+351 Portugal">Portugal (+351)</option>
+                            <option value="+1 Puerto Rico">Puerto Rico (+1)</option>
+                            <option value="+44 Reino Unido">Reino Unido (+44)</option>
+                            <option value="+236 República Centroafricana">República Centroafricana (+236)</option>
+                            <option value="+420 República Checa">República Checa (+420)</option>
+                            <option value="+243 República Democrática del Congo">República Democrática del Congo (+243)
+                            </option>
+                            <option value="+1 República Dominicana">República Dominicana (+1)</option>
+                            <option value="+262 Reunión">Reunión (+262)</option>
+                            <option value="+250 Ruanda">Ruanda (+250)</option>
+                            <option value="+40 Rumania">Rumania (+40)</option>
+                            <option value="+7 Rusia">Rusia (+7)</option>
+                            <option value="+212 Sahara Occidental">Sahara Occidental (+212)</option>
+                            <option value="+685 Samoa">Samoa (+685)</option>
+                            <option value="+1 Samoa Americana">Samoa Americana (+1)</option>
+                            <option value="+590 San Bartolomé">San Bartolomé (+590)</option>
+                            <option value="+1 San Cristóbal y Nieves">San Cristóbal y Nieves (+1)</option>
+                            <option value="+378 San Marino">San Marino (+378)</option>
+                            <option value="+590 San Martín">San Martín (+590)</option>
+                            <option value="+508 San Pedro y Miquelón">San Pedro y Miquelón (+508)</option>
+                            <option value="+1 San Vicente y las Granadinas">San Vicente y las Granadinas (+1)</option>
+                            <option value="+290 Santa Elena">Santa Elena (+290)</option>
+                            <option value="+1 Santa Lucía">Santa Lucía (+1)</option>
+                            <option value="+239 Santo Tomé y Príncipe">Santo Tomé y Príncipe (+239)</option>
+                            <option value="+221 Senegal">Senegal (+221)</option>
+                            <option value="+381 Serbia">Serbia (+381)</option>
+                            <option value="+248 Seychelles">Seychelles (+248)</option>
+                            <option value="+232 Sierra Leona">Sierra Leona (+232)</option>
+                            <option value="+65 Singapur">Singapur (+65)</option>
+                            <option value="+963 Siria">Siria (+963)</option>
+                            <option value="+252 Somalia">Somalia (+252)</option>
+                            <option value="+94 Sri Lanka">Sri Lanka (+94)</option>
+                            <option value="+268 Suazilandia">Suazilandia (+268)</option>
+                            <option value="+27 Sudáfrica">Sudáfrica (+27)</option>
+                            <option value="+249 Sudán">Sudán (+249)</option>
+                            <option value="+211 Sudán del Sur">Sudán del Sur (+211)</option>
+                            <option value="+46 Suecia">Suecia (+46)</option>
+                            <option value="+41 Suiza">Suiza (+41)</option>
+                            <option value="+597 Surinam">Surinam (+597)</option>
+                            <option value="+66 Tailandia">Tailandia (+66)</option>
+                            <option value="+886 Taiwán">Taiwán (+886)</option>
+                            <option value="+255 Tanzania">Tanzania (+255)</option>
+                            <option value="+992 Tayikistán">Tayikistán (+992)</option>
+                            <option value="+670 Timor Oriental">Timor Oriental (+670)</option>
+                            <option value="+228 Togo">Togo (+228)</option>
+                            <option value="+690 Tokelau">Tokelau (+690)</option>
+                            <option value="+676 Tonga">Tonga (+676)</option>
+                            <option value="+1 Trinidad y Tobago">Trinidad y Tobago (+1)</option>
+                            <option value="+216 Túnez">Túnez (+216)</option>
+                            <option value="+993 Turkmenistán">Turkmenistán (+993)</option>
+                            <option value="+90 Turquía">Turquía (+90)</option>
+                            <option value="+688 Tuvalu">Tuvalu (+688)</option>
+                            <option value="+380 Ucrania">Ucrania (+380)</option>
+                            <option value="+256 Uganda">Uganda (+256)</option>
+                            <option value="+598 Uruguay">Uruguay (+598)</option>
+                            <option value="+998 Uzbekistán">Uzbekistán (+998)</option>
+                            <option value="+678 Vanuatu">Vanuatu (+678)</option>
+                            <option value="+379 Vaticano">Vaticano (+379)</option>
+                            <option value="+58 Venezuela">Venezuela (+58)</option>
+                            <option value="+84 Vietnam">Vietnam (+84)</option>
+                            <option value="+681 Wallis y Futuna">Wallis y Futuna (+681)</option>
+                            <option value="+967 Yemen">Yemen (+967)</option>
+                            <option value="+253 Yibuti">Yibuti (+253)</option>
+                            <option value="+260 Zambia">Zambia (+260)</option>
+                            <option value="+263 Zimbabue">Zimbabue (+263)</option>
+                            <option value="otro">Otro país / código no listado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono *</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="Ej: 3148059869" autocomplete="tel"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio">Tipo de servicio *</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="diseno-web">Diseño Web</option>
+                            <option value="videojuegos">Videojuegos</option>
+                            <option value="chatbots">Chatbots</option>
+                            <option value="otro">Otro servicio</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group form-group--full">
+                        <label for="mensaje">Mensaje principal *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-group form-group--full">
+                        <label for="detalles">Detalles específicos</label>
+                        <textarea id="detalles" name="detalles" rows="5"
+                            placeholder="Agrega presupuesto, fecha, funcionalidades, colores, referencias o cualquier detalle importante."></textarea>
+                    </div>
+
+                    <button class="btn btn--primary" type="submit">Enviar solicitud</button>
+                </form>
+
+                <aside class="contact-info" aria-label="Credenciales e información oficial de contacto">
+                    <p class="eyebrow">Credenciales</p>
+                    <h3>Carlitos Tech</h3>
+                    <p>Estos son nuestros datos oficiales para que puedas comunicarte con confianza.</p>
+
+                    <div class="credential-list">
+                        <a class="credential-item"
+                            href="mailto:oficialmegamente4@gmail.com?subject=Vi tu pagina web, estoy interesado">
+                            <span>Correo oficial</span>
+                            <strong>oficialmegamente4@gmail.com</strong>
+                        </a>
+                        <a class="credential-item"
+                            href="mailto:quinterx420@gmail.com?subject=Vi tu pagina web, estoy interesado">
+                            <span>Correo segundario</span>
+                            <strong>quinterx420@gmail.com</strong>
+                        </a>
+                        <a class="credential-item"
+                            href="https://wa.me/573148059869?text=Vi tu pagina web, estoy interesado!">
+                            <span>Teléfono / WhatsApp</span>
+                            <strong>+57 3148059869</strong>
+                        </a>
+                        <a class="credential-item"
+                            href="https://wa.me/573006857275?text=Vi tu pagina web, estoy interesado!">
+                            <span>Teléfono / WhatsApp segundario</span>
+                            <strong>+57 3006857275</strong>
+                        </a>
+                        <div class="credential-item">
+                            <span>Creadores</span>
+                            <strong>Carlos Hernando Duburque Cardona y Juan Camilo Quintero</strong>
+                        </div>
+                        <div class="credential-item">
+                            <span>Institución</span>
+                            <strong>Institución Educativa CASD</strong>
+                        </div>
+                        <div class="credential-item">
+                            <span>Ubicación</span>
+                            <strong>Armenia, Quindío, Colombia</strong>
+                            <div class="map-container">
+                                <p><strong>Ubicación en Google Maps:</strong></p>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63636.59222568328!2d-75.72174939638201!3d4.542270330590154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5ade6653bc1%3A0xc2c6ca4ab95d8808!2sArmenia%2C%20Quindio!5e0!3m2!1sen!2sco!4v1782966993716!5m2!1sen!2sco"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </div>
+                        </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Carlitos Tech. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
