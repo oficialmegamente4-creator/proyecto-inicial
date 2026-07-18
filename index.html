@@ -199,6 +199,10 @@
                     <input type="hidden" name="_subject" value="Nueva solicitud desde Carlitos Tech">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_next" value="https://oficialmegamente4-creator.github.io/proyecto-inicial/">
+                    <!-- Añadidos para mejorar entrega -->
+                    <input type="hidden" name="_replyto" id="_replyto_hidden" value="">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="form-group">
                         <label for="nombre">Nombre completo *</label>
                         <input id="nombre" name="nombre" type="text" placeholder="Ej: Carlos Duburque"
@@ -365,9 +369,9 @@
                             <option value="+258 Mozambique">Mozambique (+258)</option>
                             <option value="+95 Myanmar">Myanmar (+95)</option>
                             <option value="+264 Namibia">Namibia (+264)</option>
-                            <option value="+674 Nauru">Nauru (+674)</option>
+                            <option value="+674 Nauru">Nauru (+674</option>
                             <option value="+977 Nepal">Nepal (+977)</option>
-                            <option value="+505 Nicaragua">Nicaragua (+505</option>
+                            <option value="+505 Nicaragua">Nicaragua (+505)</option>
                             <option value="+227 Níger">Níger (+227)</option>
                             <option value="+234 Nigeria">Nigeria (+234)</option>
                             <option value="+683 Niue">Niue (+683)</option>
@@ -381,7 +385,7 @@
                             <option value="+970 Palestina">Palestina (+970)</option>
                             <option value="+507 Panamá">Panamá (+507)</option>
                             <option value="+675 Papúa Nueva Guinea">Papúa Nueva Guinea (+675)</option>
-                            <option value="+595 Paraguay">Paraguay (+595)</option>
+                            <option value="+595 Paraguay">Paraguay (+595</option>
                             <option value="+51 Perú">Perú (+51)</option>
                             <option value="+689 Polinesia Francesa">Polinesia Francesa (+689)</option>
                             <option value="+48 Polonia">Polonia (+48)</option>
@@ -390,16 +394,15 @@
                             <option value="+44 Reino Unido">Reino Unido (+44)</option>
                             <option value="+236 República Centroafricana">República Centroafricana (+236)</option>
                             <option value="+420 República Checa">República Checa (+420)</option>
-                            <option value="+243 República Democrática del Congo">República Democrática del Congo (+243)
-                            </option>
+                            <option value="+243 República Democrática del Congo">Republica Democrática del Congo (+243)</option>
                             <option value="+1 República Dominicana">República Dominicana (+1)</option>
                             <option value="+262 Reunión">Reunión (+262)</option>
                             <option value="+250 Ruanda">Ruanda (+250)</option>
                             <option value="+40 Rumania">Rumania (+40)</option>
                             <option value="+7 Rusia">Rusia (+7)</option>
                             <option value="+212 Sahara Occidental">Sahara Occidental (+212)</option>
-                            <option value="+685 Samoa">Samoa (+685)</option>
-                            <option value="+1 Samoa Americana">Samoa Americana (+1)</option>
+                            <option value="+685 Samoa">Samoa (+685</option>
+                            <option value="+1 Samoa Americana">Samoa Americana (+1</option>
                             <option value="+590 San Bartolomé">San Bartolomé (+590)</option>
                             <option value="+1 San Cristóbal y Nieves">San Cristóbal y Nieves (+1)</option>
                             <option value="+378 San Marino">San Marino (+378)</option>
@@ -443,7 +446,7 @@
                             <option value="+998 Uzbekistán">Uzbekistán (+998)</option>
                             <option value="+678 Vanuatu">Vanuatu (+678)</option>
                             <option value="+379 Vaticano">Vaticano (+379)</option>
-                            <option value="+58 Venezuela">Venezuela (+58)</option>
+                            <option value="+58 Venezuela">Venezuela (+58</option>
                             <option value="+84 Vietnam">Vietnam (+84)</option>
                             <option value="+681 Wallis y Futuna">Wallis y Futuna (+681)</option>
                             <option value="+967 Yemen">Yemen (+967)</option>
@@ -539,6 +542,20 @@
     <footer class="site-footer">
         <p>&copy; 2026 Carlitos Tech. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+    // Establece el campo _replyto con el valor del campo de correo antes de enviar
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('.contact-form');
+        var replyHidden = document.getElementById('_replyto_hidden');
+        if (form && replyHidden) {
+            form.addEventListener('submit', function() {
+                var e = document.getElementById('correo');
+                if (e) replyHidden.value = e.value || '';
+            });
+        }
+    });
+    </script>
 
     <script src="script.js"></script>
 </body>
