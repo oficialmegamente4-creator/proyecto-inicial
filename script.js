@@ -1,4 +1,4 @@
-// MENU RESPONSIVO: controla la apertura/cierre del menu en celulares.
+// controla la apertura/cierre del menu en celulares
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-menu a");
@@ -18,7 +18,7 @@ navLinks.forEach((link) => {
     });
 });
 
-// ANIMACIONES AL HACER SCROLL: agrega la clase .is-visible cuando una seccion entra en pantalla.
+
 const revealElements = document.querySelectorAll(".reveal");
 
 const revealOnScroll = new IntersectionObserver(
@@ -36,6 +36,3 @@ const revealOnScroll = new IntersectionObserver(
 );
 
 revealElements.forEach((element) => revealOnScroll.observe(element));
-
-// FORMULARIO: el envío lo gestiona FormSubmit desde el atributo action del formulario.
-// La primera vez, FormSubmit pedirá confirmar el correo oficial para activar la receptíon.

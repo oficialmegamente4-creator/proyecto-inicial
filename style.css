@@ -257,11 +257,13 @@ h3 {
 }
 
 .collab-item img {
-    aspect-ratio: 1.75;
+    width: 100%;
+    height: 220px;
     border-radius: var(--radius);
     margin-bottom: 18px;
-    object-fit: cover;
-    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
 }
 
 .collab-item h3,
@@ -353,12 +355,11 @@ h3 {
 }
 
 .gallery-grid img {
-    aspect-ratio: 1.35;
-    border: 1px solid var(--color-line);
-    border-radius: var(--radius);
-    object-fit: cover;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
     width: 100%;
+    height: 260px;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
 }
 
 .gallery-grid img:hover {
@@ -480,6 +481,23 @@ h3 {
 .reveal.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Cambiar Espacio entre los iconos */
+}
+
+.redes-sociales i {
+    font-size: 30px; /* Cambiar Tamaño para los iconos de redes */
+    color: #333;
+}
+
+.enlace-logo img {
+    width: 40px; /* Ajustar el tamaño de la imagen para que encaje con los iconos */
+    height: auto;
+    vertical-align: middle;
 }
 
 @media (max-width: 900px) {

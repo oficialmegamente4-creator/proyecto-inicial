@@ -28,7 +28,7 @@ function initializeGame() {
         dx: (Math.random() < 0.5 ? 1 : -1) * GRID_SIZE,
         dy: (Math.random() < 0.5 ? 1 : -1) * GRID_SIZE
     };
-    // Establecer dirección inicial de la serpiente
+    // Establecer dirección inicial de la serpiente 
     dx = 0;
     dy = -GRID_SIZE;
     blinkCounter = 0;
@@ -228,7 +228,7 @@ setInterval(update, 100);
 window.addEventListener('blur', function () {
     gamePause = true;
 });
-
+z
 // Reanudar el juego cuando la ventana gane foco
 window.addEventListener('focus', function () {
     gamePause = false;
